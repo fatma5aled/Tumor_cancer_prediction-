@@ -113,7 +113,7 @@ labels2=["logistic_Regression  MSE","decision_tree MSE","SVC MSE"]
 plt.pie(mses, labels=labels2, autopct='%1.1f%%')
 plt.title('mse Visualization')
 plt.show()
- st.title("Predictions:")
+st.title("Predictions:")
 compactness_mean=st..number_input("write your compactness_mean ")
 concavity_mean=st.number_input("write your concavity_mean")
 concave_points_mean=st.number_input("write your concave_points_mean")
