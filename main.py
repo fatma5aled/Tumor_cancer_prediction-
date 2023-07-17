@@ -24,7 +24,7 @@ print(columns_with_nulls)
 #don't have any nulls
 
 data.drop_duplicates(inplace=True)
-correlation_matrix = data.corr()
+correlation_matrix = x.corr()
 plt.figure(figsize=(10,8))
 sns.heatmap(correlation_matrix, annot=True, cmap='Blues', fmt=".2f")
 plt.title('Correlation Heatmap')
