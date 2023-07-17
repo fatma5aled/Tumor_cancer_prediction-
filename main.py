@@ -113,7 +113,8 @@ labels2=["logistic_Regression  MSE","decision_tree MSE","SVC MSE"]
 plt.pie(mses, labels=labels2, autopct='%1.1f%%')
 plt.title('mse Visualization')
 plt.show()
-compactness_mean=st.number_input("write your compactness_mean ")
+ st.title("Predictions:")
+compactness_mean=st..number_input("write your compactness_mean ")
 concavity_mean=st.number_input("write your concavity_mean")
 concave_points_mean=st.number_input("write your concave_points_mean")
 concavity_worst=st.number_input("write your concavity_worst")
@@ -133,18 +134,14 @@ if st.button("Predict"):
  prediction.append(secmodel_prediction)
  thirdmodel_prediction=svc.predict(new_data)
  prediction.append(thirdmodel_prediction)
- final_prediction=sum(prediction)
+ final_prediction=sum(prediction)  
  if final_prediction < 2:
      final_prediction="B"
  else:
     final_prediction="M"
- st.title("Predictions:")
- st.title("Logistic Regression:")      
- st.write( prediction[0])
- st.title("Decision Tree:")      
- st.write( prediction[1])
- st.title("SVM:")        
- st.write(prediction[2])
+ st.write("Logistic Regression:", prediction[0])    
+ st.write("Decision Tree:", prediction[1])   
+ st.write("SVM:",prediction[2])
  st.title("Final prediction")      
  st.write(final_prediction)
 
