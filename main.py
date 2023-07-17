@@ -138,8 +138,9 @@ if st.button("Predict"):
      final_prediction="B"
  else:
     final_prediction="M"
- st.write("Predictions:")
- st.write("Logistic Regression:", prediction[0])
- st.write("Decision Tree:", prediction[1])
- st.write("SVM:", prediction[2])
- st.write("Final prediction",final_prediction)
+ st.title("Predictions:")
+ st.title("Logistic Regression:", prediction[0])
+ st.title("Decision Tree:", prediction[1])
+ st.title("SVM:", prediction[2])
+ st.title("Final prediction",final_prediction)
+
