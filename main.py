@@ -15,7 +15,7 @@ def set_background():
         """
         <style>
           .stApp {{
-             background-image: url( "https://www.dreamstime.com/breast-cancer-awareness-logo-design-month-icon-realistic-pink-ribbon-care-hope-text-to-world-bright-brest-medical-banner-image129935186");
+             background-image: url("https://w7.pngwing.com/pngs/870/748/png-transparent-breast-cancer-pink-ribbon-breast-cancer-logo-cartoon-fictional-character-thumbnail.png") 
              background-attachment: fixed;
              background-size: cover
         </style>
