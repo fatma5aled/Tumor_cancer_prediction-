@@ -10,11 +10,18 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 import streamlit as st
-
-background_image = "https://www.dreamstime.com/breast-cancer-awareness-logo-design-month-icon-realistic-pink-ribbon-care-hope-text-to-world-bright-brest-medical-banner-image129935186"
-
-# Display the background image
-st.image(background_image, use_column_width=True)
+def set_background():
+     st.markdown(
+        """
+        <style>
+          .stApp {{
+             background-image: url( "https://www.dreamstime.com/breast-cancer-awareness-logo-design-month-icon-realistic-pink-ribbon-care-hope-text-to-world-bright-brest-medical-banner-image129935186");
+             background-attachment: fixed;
+             background-size: cover
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 data=pd.read_csv('Tumor Cancer Prediction_Data.csv')
 print(data.head())
 x=data.iloc[:,:-1]
@@ -147,5 +154,5 @@ if st.button("Predict"):
  st.write("Decision Tree:", prediction[1])   
  st.write("SVM:",prediction[2])
  st.title("Final prediction")      
- st.title(st.write(final_prediction))
+ st.write(final_prediction)
 
