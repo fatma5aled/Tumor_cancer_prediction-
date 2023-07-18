@@ -159,9 +159,9 @@ if st.button("Predict"):
      final_prediction="Benignant"
  else:
     final_prediction="Malignant"
- st.write(bold_label("Logistic Regression:"), prediction[0])    
- st.write("Decision Tree:", prediction[1])   
- st.write("SVM:",prediction[2])
+ st.write(bold_label("Logistic Regression"), prediction[0])    
+ st.write(bold_label("Decision Tree"), prediction[1])   
+ st.write(bold_label("SVM"),prediction[2])
  st.title("Final prediction")      
- st.write(final_prediction)
+ st.markdown(final_prediction)
 
