@@ -139,7 +139,7 @@ concavity_mean=st.number_input(bold_label("write your concavity_mean"), value=0)
 concave_points_mean=st.number_input(bold_label("write your concave_points_mean"),value=0)
 concavity_worst=st.number_input(bold_label("write your concavity_worst"),value=0)
 perimeter_worst=st.number_input(bold_label("write your perimeter_worst"),value=0)
-concave_points_worst=st.number_input(bold_label("write your concave_points_worst")value=0)
+concave_points_worst=st.number_input(bold_label("write your concave_points_worst"),value=0)
 if st.button("Predict"):
  new_data=list([compactness_mean,concavity_mean,concave_points_mean,concavity_worst,perimeter_worst,concave_points_worst])
  new_data = [new_data]
