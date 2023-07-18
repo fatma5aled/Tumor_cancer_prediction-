@@ -131,8 +131,10 @@ plt.pie(mses, labels=labels2, autopct='%1.1f%%')
 plt.title('mse Visualization')
 plt.show()
 st.title("Predictions:")
-st.markdown("write your compactness_mean ")
-compactness_mean=st.number_input(value=0)
+def bold_label(text):
+    return f"**{text}**"
+
+compactness_mean=st.number_input(bold_label("write your compactness_mean "))
 concavity_mean=st.number_input("write your concavity_mean")
 concave_points_mean=st.number_input("write your concave_points_mean")
 concavity_worst=st.number_input("write your concavity_worst")
