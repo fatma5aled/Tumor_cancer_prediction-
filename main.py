@@ -11,17 +11,19 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 import streamlit as st
 def set_background():
-     st.markdown(
+    st.markdown(
         """
         <style>
-          .stApp {{
-             background-image: url("https://w7.pngwing.com/pngs/870/748/png-transparent-breast-cancer-pink-ribbon-breast-cancer-logo-cartoon-fictional-character-thumbnail.png") 
+          .stApp {
+             background-image: url("https://w7.pngwing.com/pngs/870/748/png-transparent-breast-cancer-pink-ribbon-breast-cancer-logo-cartoon-fictional-character-thumbnail.png");
              background-attachment: fixed;
-             background-size: cover
+             background-size: cover;
+          }
         </style>
         """,
         unsafe_allow_html=True
     )
+
 set_background()
 data=pd.read_csv('Tumor Cancer Prediction_Data.csv')
 print(data.head())
