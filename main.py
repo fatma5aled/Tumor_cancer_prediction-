@@ -163,5 +163,5 @@ if st.button("Predict"):
  st.write(bold_label("Decision Tree"), prediction[1])   
  st.write(bold_label("SVM"),prediction[2])
  st.title("Final prediction")      
- st.markdown(final_prediction)
+ st.markdown(f"{final_prediction}")
 
