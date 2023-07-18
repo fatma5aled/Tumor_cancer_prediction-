@@ -156,7 +156,7 @@ if st.button("Predict"):
  prediction.append(thirdmodel_prediction)
  final_prediction=sum(prediction)  
  if final_prediction < 2:
-     final_prediction="Benign"
+     final_prediction=" Benign "
  else:
     final_prediction="Malignant"
  st.write(bold_label("Logistic Regression"), prediction[0])    
