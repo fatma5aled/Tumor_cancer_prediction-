@@ -15,7 +15,7 @@ def set_background():
         """
         <style>
           .stApp {
-             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWSq4QSLT7shE3LBB5n_8Yyni9lpKIhXAqtA&usqp=CAU");
+             background-image: url("https://media.istockphoto.com/id/1331114165/vector/pink-ribbon-is-passing-from-hand-to-hand-breast-cancer-awareness-concept-with-human-arms.jpg?s=612x612&w=0&k=20&c=7PWeeefw4JtvZRl-Jj2AJ5FCfUyP-DVsGyNaGwcJxc8=");
              background-attachment: fixed;
              background-size: cover;
              background-position:center;
