@@ -22,6 +22,7 @@ def set_background():
         """,
         unsafe_allow_html=True
     )
+set_background()
 data=pd.read_csv('Tumor Cancer Prediction_Data.csv')
 print(data.head())
 x=data.iloc[:,:-1]
