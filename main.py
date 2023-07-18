@@ -130,7 +130,7 @@ labels2=["logistic_Regression  MSE","decision_tree MSE","SVC MSE"]
 plt.pie(mses, labels=labels2, autopct='%1.1f%%')
 plt.title('mse Visualization')
 plt.show()
-st.title("Predictions:")
+st.title("      Tumor Cancer Predictions")
 def bold_label(text):
     return f"**{text}**"
 
