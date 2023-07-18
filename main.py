@@ -20,6 +20,7 @@ def set_background():
              background-size: cover;
              background-position:center;
              background-repeat: no-repeat;
+             padding-top: 100px;
           }
         </style>
         """,
