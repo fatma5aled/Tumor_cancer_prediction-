@@ -18,6 +18,8 @@ def set_background():
              background-image: url("https://thumbs.dreamstime.com/z/breast-cancer-awareness-logo-design-month-icon-realistic-pink-ribbon-care-hope-text-to-world-bright-brest-medical-banner-129935186.jpg?w=768");
              background-attachment: fixed;
              background-size: cover;
+             background-position: center center;
+             background-repeat: no-repeat;
           }
         </style>
         """,
